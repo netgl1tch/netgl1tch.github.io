@@ -1,0 +1,18 @@
+<header class="site-header">
+
+  <div class="container header-inner">
+
+    <div class="logo">
+      <a href="{{ '/' | relative_url }}">
+        <span class="prompt">~$ </span>{{ site.title }}
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <a class="nav-link" data-hover-label="Home" href="{{ '/' | relative_url }}">Home</a>
+      <a class="nav-link" data-hover-label="Notes" href="{{ '/notes' | relative_url }}">Notes</a>
+      <a class="nav-link" data-hover-label="Writeups" href="{{ '/writeups' | relative_url }}">Writeups</a>
+      <a class="nav-link" data-hover-label="About" href="{{ '/about' | relative_url }}">About</a>
+    </nav>
+  </div>
+</header>

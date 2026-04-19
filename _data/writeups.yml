@@ -1,0 +1,36 @@
+items:
+  - title: HackTheBox
+    url: /writeups/htb
+    writeups: 
+      - name: Expressway
+        url: /writeups/htb/expressway
+      - name: Guardian
+        url: /writeups/htb/guardian
+      - name: Facts
+        url: /writeups/htb/facts
+      - name: CCTV
+        url: /writeups/htb/cctv
+      - name: WingData
+        url: /writeups/htb/wingdata
+      - name: MonitorsFour
+        url: /writeups/htb/monitorsfour
+      - name: Principal
+        url: /writeups/htb/principal
+      - name: Overwatch
+        url: /writeups/htb/overwatch
+      # - name: AirTouch
+      #   url: /writeups/htb/airtouch
+      # - name: TwoMillion
+      #   url: /writeups/htb/twomillion
+  - title: TryHackMe
+    url: /writeups/thm
+    writeups:
+      - name: 'VulnNet: Roasted'
+        url: /writeups/thm/vulnnet-roasted
+      - name: Glitch
+        url: /writeups/thm/glitch
+      - name: Flatline
+        url: /writeups/thm/flatline
+  # - title: Portswigger Labs
+  #   url: /writeups/portswigger
+        

@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<div class="container">
+<article class="post">
+
+  <header class="post-header">
+    
+    
+    <div class="post-header_content">
+
+      <h1>{{ page.title }}</h1>
+
+      <div class="post-meta">
+        <span>{{ page.date | date: "%d %B %Y" }}</span>
+
+        {% if page.link %}
+          <h4><a href="{{ page.link }}">Link</a></h4>
+        {% endif %}
+
+        {% if page.os %}
+          <h4>OS  -> <span>{{ page.os }}</span></h4>
+        {% endif %}
+
+        {% if page.difficulty %}
+          <h4>Difficulty  -> <span>{{ page.difficulty }}</span></h4>
+        {% endif %}
+
+      </div>
+
+    </div>
+    {% if page.icon %}
+<div class="post-header_icon">
+  
+      <img src={{page.icon}} alt='{{"icon "+page.title}}'>
+    </div>    
+{% endif%}
+  </header>
+  <div class="post-review">
+    {% if page.review %}
+    <h3>Review</h3>
+      <p>{{page.review}}</p>
+    {% endif %}
+  </div>
+  <hr>
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
+</div>
+{% if page.back_links %}
+<div class="links_back">
+{% for link in page.back_links %}
+  <a href="{{ link.url }}">{{ link.name }}</a>
+{% endfor %}
+</div>
+{% endif %}

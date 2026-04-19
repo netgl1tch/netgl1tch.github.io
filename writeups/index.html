@@ -1,0 +1,18 @@
+---
+permalink: /writeups/
+layout: page
+tab_title: wr1teups 
+---
+
+<h1>Writeups</h1>
+
+{% for item in site.data.writeups.items %}
+
+<h1><a href='{{ item.url }}'>{{ item.title }}</a></h1>
+
+    {% for writeup in item.writeups %}
+        <div><a href='{{ writeup.url }}'>-> {{writeup.name}}</a></div>
+    {% endfor %}
+    
+{% endfor %}
+

@@ -1,0 +1,17 @@
+---
+permalink: /writeups/thm/
+layout: page
+title: TryHackMe
+tab_title: TryHackMe
+back_link: /writeups
+back_link_title: b4ck t0 wr1t3up$
+---
+
+{% for item in site.data.writeups.items %}
+    {%  if item.title == "TryHackMe" %}
+    {% for writeup in item.writeups %}
+        <div><a href='{{ writeup.url }}'>-> {{writeup.name}}</a></div>
+    {% endfor %}
+    {% endif %}
+{% endfor %}
+

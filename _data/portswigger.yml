@@ -1,0 +1,126 @@
+# topics: 
+#   - title: Insecure Desiarilization
+#     url: /writeups/portswigger/insecure-deserialization
+#     labs:
+#     - name: Arbitrary object injection in PHP
+#       url: /writeups/portswigger/insecure-deserialization/arbitrary-object-injection-php
+#     - name: Exploiting Java deserialization with apache commons
+#       url: /writeups/portswigger/insecure-deserialization/exploit-java-deserialization-apache
+  #   - name: Exploiting PHP deserialization with a pre-built gadget chain
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-php-deserialization-pre-built-gadget-chain
+  #   - name: Exploiting Ruby deserialization using a documented gadget chain
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   # - name: Developing a custom gadget chain for Java deserialization
+  #   #   url: /writeups/portswigger/insecure-deserialization/developing-custom-gadget-chain-for-java-deserialization
+  # - title: SQL Injections
+  #   url: /writeups/portswigger/sqli
+  #   labs:
+  #   - name: SQL injection UNION attack, retrieving data from other tables
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: SQL injection UNION attack, retrieving multiple values in a single column
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Blind SQL injection with conditional responses
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Blind SQL injection with conditional errors
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Visible error-based SQL injection
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Blind SQL injection with time delays
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Blind SQL injection with time delays and information retrieval
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Blind SQL injection with out-of-band interaction
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Blind SQL injection with out-of-band data exfiltration
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: SQL injection with filter bypass via XML encoding
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  # - title: XSS
+  #   url: /writeups/portswigger/xss
+  #   labs:
+  #   - name: DOM XSS in document.write sink using source location.search inside a select element
+  #     url: /writeups/portswigger/xxs
+  #   - name: DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
+  #     url: /writeups/portswigger/xxs
+  #   - name: Reflected DOM XSS
+  #     url: /writeups/portswigger/xxs
+  #   - name: Stored DOM XSS
+  #     url: /writeups/portswigger/xxs
+  #   - name: Reflected XSS into HTML context with most tags and attributes blocked
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS into HTML context with all tags blocked except custom ones
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS with some SVG markup allowed
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS in canonical link tag
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS into a JavaScript string with single quote and backslash escaped
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Stored XSS into onclick event with angle brackets and double quotes HTML-encoded and single quotes and backslash escaped
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Exploiting cross-site scripting to steal cookies
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Exploiting cross-site scripting to capture passwords
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Exploiting XSS to bypass CSRF defenses
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS with AngularJS sandbox escape without strings
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS with AngularJS sandbox escape and CSP
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS with event handlers and href attributes blocked
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS in a JavaScript URL with some characters blocked
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS protected by very strict CSP, with dangling markup attack
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  #   - name: Reflected XSS protected by CSP, with CSP bypass
+  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+  # - title: Web cache deception
+  #   url: /writeups/portswigger/web-cache-deception
+  #   labs:       
+  # - title: XXE
+  #   url: /writeups/portswigger/xxe
+  #   labs:
+  #   - name: Blind XXE with out-of-band interaction
+  #     url: /writeups/portswigger/xxe
+  #   - name: Blind XXE with out-of-band interaction via XML parameter entities
+  #     url: /writeups/portswigger/xxe
+  #   - name: Exploiting blind XXE to exfiltrate data using a malicious external DTD
+  #     url: /writeups/portswigger/xxe
+  #   - name: Exploiting blind XXE to retrieve data via error messages
+  #     url: /writeups/portswigger/xxe
+  #   - name: Exploiting XInclude to retrieve files
+  #     url: /writeups/portswigger/xxe
+  #   - name: Exploiting XXE via image file upload
+  #     url: /writeups/portswigger/xxe
+  #   - name: Exploiting XXE to retrieve data by repurposing a local DTD
+  #     url: /writeups/portswigger/xxe
+  # - title: Server-Side Request Forgery (SSRF)
+  #   url: /writeups/portswigger/ssrf
+  #   labs:       
+  #   - name: Blind SSRF with out-of-band detection
+  #     url: /writeups/portswigger/ssrf
+  #   - name: SSRF with blacklist-based input filter
+  #     url: /writeups/portswigger/ssrf
+  #   - name: SSRF with filter bypass via open redirection vulnerability
+  #     url: /writeups/portswigger/ssrf
+  #   - name: Blind SSRF with Shellshock exploitation
+  #     url: /writeups/portswigger/ssrf
+  #   - name: SSRF with whitelist-based input filter
+  #     url: /writeups/portswigger/ssrf
+  # - title: OS Command Injections
+  #   url: /writeups/portswigger/command-injection
+  #   labs:
+  #   - name: Blind OS command injection with time delays
+  #     url: /writeups/portswigger/command-injection
+  #   - name: Blind OS command injection with output redirection
+  #     url: /writeups/portswigger/command-injection
+  #   - name: Blind OS command injection with out-of-band interaction
+  #     url: /writeups/portswigger/command-injection
+  #   - name: Blind OS command injection with out-of-band data exfiltration
+  #     url: /writeups/portswigger/command-injection

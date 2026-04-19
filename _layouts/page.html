@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% if page.back_link %}
+<a href="{{page.back_link}}">{{page.back_link_title}}</a>
+<hr>
+{% endif %}
+
+{% if page.title %}
+<h1>{{ page.title }}</h1>
+{% endif %}
+
+{{ content }}
