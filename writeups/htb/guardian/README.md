@@ -727,7 +727,6 @@ Apache supports many directives, but only three are checked. This allows arbitra
 
 ## Root
 
-![alt text](<Pasted image 20260228185308.png>)
 Apache provides a directive called **LoadFile**, which can be used to load shared objects (`.so files`). This raised the question of how these files are loaded internally.
 
 The directive is implemented in the `mod_so` module. 
@@ -746,7 +745,7 @@ if (fullname && apr_dso_load(modhandlep, fullname, cmd->pool) == APR_SUCCESS) { 
 ```
 apr_dso_load -> https://github.com/apache/apr/blob/trunk/dso/unix/dso.c#L80 
 
-This eventually leads to a call to `dlopen()`: https://github.com/apache/apr/blob/e461da5864fdd2fca6a15ec8d6c42d7f67c5f199/dso/unix/dso.c#L12 3
+This eventually leads to a call to `dlopen()`: https://github.com/apache/apr/blob/e461da5864fdd2fca6a15ec8d6c42d7f67c5f199/dso/unix/dso.c#L123
 
 https://github.com/apache/apr/blob/e461da5864fdd2fca6a15ec8d6c42d7f67c5f199/dso/unix/dso.c#L139
 
@@ -755,8 +754,8 @@ From the dlopen documentation:
 
 -> it dynamically loads a shared object into the process memory. Man pages contain information about contructors:
 
-![alt text](<Screenshot from 2026-02-28 18-43-10.png>)
-![alt text](<Screenshot from 2026-02-28 18-44-37.png>)
+![alt text](images/image-40.png)
+![alt text](images/image-41.png)
 
 An important detail is that constructors (functions marked with `__attribute__((constructor))`) are executed automatically when the shared object is loaded, before control returns to the caller.
 
@@ -764,7 +763,7 @@ This means that arbitrary code placed inside a constructor will be executed imme
 
 #### Exploitation
 
-Therefore, we can leverage this behaviour to escalate privileges by creating a malicious shared pbject.
+Therefore, we can leverage this behaviour to escalate privileges by creating a malicious shared object.
 
 file c:
 ```c
@@ -799,7 +798,7 @@ Malicious custom.conf file that loads the ev1l.so file compiled above:
 ```
 LoadFile /home/mark/confs/ev1l.so
 ```
-![alt text](image-1.png)
+![alt text](images/image-39.png)
 Trasfer both files to the target system into `/home/mark/confs/` and execute this:
 ```bash
 sudo /usr/local/bin/safeapache2ctl -f /home/mark/confs/custom.conf

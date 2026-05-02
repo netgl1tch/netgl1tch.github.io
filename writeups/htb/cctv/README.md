@@ -7,7 +7,7 @@ icon: /writeups/htb/cctv/images/lab-icon.png
 difficulty: easy
 os: Linux
 link: https://app.hackthebox.com/machines/cctv
-review: "Descriptions ...."
+review: ""
 back_links:
     - name: "~/writeups/htb"
       url: /writeups/htb

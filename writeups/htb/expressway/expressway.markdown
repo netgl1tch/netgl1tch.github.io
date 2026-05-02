@@ -4,7 +4,7 @@ title: "Expressway [HTB]"
 tab_title: "Expressway Wr1teup"
 permalink: /writeups/htb/expressway
 icon:  /writeups/htb/expressway/images/image.png
-difficulty: hard
+difficulty: easy
 os: Linux
 link: https://app.hackthebox.com/machines/Expressway
 review: "This is an easy Linux machine focused on IPsec/IKEv1 enumeration and PSK cracking. After obtaining SSH credentials, privilege escalation is achieved through a vulnerable sudo version (CVE-2025-32462)."

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "MonitorsFour [HTB]"
-tab_title: "MonitorsFour Wr1teup"
+title: "Monitorsfour [HTB]"
+tab_title: "Monitorsfour Wr1teup"
 permalink: /writeups/htb/monitorsfour
 icon: /writeups/htb/monitorsfour/images/lab-icon.png
 difficulty: easy
-os: Linux
-link: https://app.hackthebox.com/machines/monitorsfour
+os: Windows
+link: https://app.hackthebox.com/machines/Monitorsfour
 review: ""
 back_links:
     - name: "~/writeups/htb"
@@ -14,6 +14,7 @@ back_links:
     - name: '~/writeups'
       url: /writeups
 ---
+
 # ~# It is Active now
 
 Writeup will reveal after retiring
