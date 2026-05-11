@@ -18,10 +18,6 @@ items:
         url: /writeups/htb/principal
       - name: Overwatch
         url: /writeups/htb/overwatch
-      # - name: AirTouch
-      #   url: /writeups/htb/airtouch
-      # - name: TwoMillion
-      #   url: /writeups/htb/twomillion
   - title: TryHackMe
     url: /writeups/thm
     writeups:
