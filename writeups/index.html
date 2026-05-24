@@ -4,15 +4,15 @@ layout: page
 tab_title: wr1teups 
 ---
 
-<h1>Writeups</h1>
+<h1>~$ Writeups</h1>
 
 {% for item in site.data.writeups.items %}
 
-<h1><a href='{{ item.url }}'>{{ item.title }}</a></h1>
+<h2><a href='{{ item.url }}'> {{ item.title }}</a></h2>
 
     {% for writeup in item.writeups %}
-        <div><a href='{{ writeup.url }}'>-> {{writeup.name}}</a></div>
+        <div style="margin-left: 30px;"><a href='{{ writeup.url }}'><span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}}</a></div>
     {% endfor %}
-    
+    <hr class="delimiter-hr" style="color: rgba(95, 250, 255, 0.249); -webkit-animation: wiggle 0.4s;">
 {% endfor %}
 

@@ -3,124 +3,264 @@
 #     url: /writeups/portswigger/insecure-deserialization
 #     labs:
 #     - name: Arbitrary object injection in PHP
+#       type: PRACTITIONER
 #       url: /writeups/portswigger/insecure-deserialization/arbitrary-object-injection-php
+#       type: PRACTITIONER
 #     - name: Exploiting Java deserialization with apache commons
-#       url: /writeups/portswigger/insecure-deserialization/exploit-java-deserialization-apache
-  #   - name: Exploiting PHP deserialization with a pre-built gadget chain
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-php-deserialization-pre-built-gadget-chain
-  #   - name: Exploiting Ruby deserialization using a documented gadget chain
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   # - name: Developing a custom gadget chain for Java deserialization
-  #   #   url: /writeups/portswigger/insecure-deserialization/developing-custom-gadget-chain-for-java-deserialization
-  # - title: SQL Injections
-  #   url: /writeups/portswigger/sqli
-  #   labs:
-  #   - name: SQL injection UNION attack, retrieving data from other tables
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: SQL injection UNION attack, retrieving multiple values in a single column
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Blind SQL injection with conditional responses
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Blind SQL injection with conditional errors
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Visible error-based SQL injection
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Blind SQL injection with time delays
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Blind SQL injection with time delays and information retrieval
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Blind SQL injection with out-of-band interaction
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Blind SQL injection with out-of-band data exfiltration
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: SQL injection with filter bypass via XML encoding
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  # - title: XSS
-  #   url: /writeups/portswigger/xss
-  #   labs:
-  #   - name: DOM XSS in document.write sink using source location.search inside a select element
-  #     url: /writeups/portswigger/xxs
-  #   - name: DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
-  #     url: /writeups/portswigger/xxs
-  #   - name: Reflected DOM XSS
-  #     url: /writeups/portswigger/xxs
-  #   - name: Stored DOM XSS
-  #     url: /writeups/portswigger/xxs
-  #   - name: Reflected XSS into HTML context with most tags and attributes blocked
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS into HTML context with all tags blocked except custom ones
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS with some SVG markup allowed
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS in canonical link tag
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS into a JavaScript string with single quote and backslash escaped
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Stored XSS into onclick event with angle brackets and double quotes HTML-encoded and single quotes and backslash escaped
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Exploiting cross-site scripting to steal cookies
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Exploiting cross-site scripting to capture passwords
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Exploiting XSS to bypass CSRF defenses
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS with AngularJS sandbox escape without strings
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS with AngularJS sandbox escape and CSP
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS with event handlers and href attributes blocked
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS in a JavaScript URL with some characters blocked
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS protected by very strict CSP, with dangling markup attack
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  #   - name: Reflected XSS protected by CSP, with CSP bypass
-  #     url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
-  # - title: Web cache deception
-  #   url: /writeups/portswigger/web-cache-deception
-  #   labs:       
-  # - title: XXE
-  #   url: /writeups/portswigger/xxe
-  #   labs:
-  #   - name: Blind XXE with out-of-band interaction
-  #     url: /writeups/portswigger/xxe
-  #   - name: Blind XXE with out-of-band interaction via XML parameter entities
-  #     url: /writeups/portswigger/xxe
-  #   - name: Exploiting blind XXE to exfiltrate data using a malicious external DTD
-  #     url: /writeups/portswigger/xxe
-  #   - name: Exploiting blind XXE to retrieve data via error messages
-  #     url: /writeups/portswigger/xxe
-  #   - name: Exploiting XInclude to retrieve files
-  #     url: /writeups/portswigger/xxe
-  #   - name: Exploiting XXE via image file upload
-  #     url: /writeups/portswigger/xxe
-  #   - name: Exploiting XXE to retrieve data by repurposing a local DTD
-  #     url: /writeups/portswigger/xxe
-  # - title: Server-Side Request Forgery (SSRF)
-  #   url: /writeups/portswigger/ssrf
-  #   labs:       
-  #   - name: Blind SSRF with out-of-band detection
-  #     url: /writeups/portswigger/ssrf
-  #   - name: SSRF with blacklist-based input filter
-  #     url: /writeups/portswigger/ssrf
-  #   - name: SSRF with filter bypass via open redirection vulnerability
-  #     url: /writeups/portswigger/ssrf
-  #   - name: Blind SSRF with Shellshock exploitation
-  #     url: /writeups/portswigger/ssrf
-  #   - name: SSRF with whitelist-based input filter
-  #     url: /writeups/portswigger/ssrf
-  # - title: OS Command Injections
-  #   url: /writeups/portswigger/command-injection
-  #   labs:
-  #   - name: Blind OS command injection with time delays
-  #     url: /writeups/portswigger/command-injection
-  #   - name: Blind OS command injection with output redirection
-  #     url: /writeups/portswigger/command-injection
-  #   - name: Blind OS command injection with out-of-band interaction
-  #     url: /writeups/portswigger/command-injection
-  #   - name: Blind OS command injection with out-of-band data exfiltration
-  #     url: /writeups/portswigger/command-injection
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-java-deserialization-with-apache-commons
+#     - name: Exploiting PHP deserialization with a pre-built gadget chain
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-php-deserialization-with-a-pre-built-gadget-chain
+#     - name: Exploiting Ruby deserialization using a documented gadget chain
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-a-documented-gadget-chain
+#   - title: SQL Injections
+#     url: /writeups/portswigger/sqli
+#     labs:
+#     - name: SQL injection UNION attack, retrieving data from other tables
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: SQL injection UNION attack, retrieving multiple values in a single column
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Blind SQL injection with conditional responses
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Blind SQL injection with conditional errors
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Visible error-based SQL injection
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Blind SQL injection with time delays
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Blind SQL injection with time delays and information retrieval
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Blind SQL injection with out-of-band interaction
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Blind SQL injection with out-of-band data exfiltration
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: SQL injection with filter bypass via XML encoding
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#   - title: XSS
+#     url: /writeups/portswigger/xss
+#     labs:
+#     - name: DOM XSS in document.write sink using source location.search inside a select element
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxs
+#     - name: DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxs
+#     - name: Reflected DOM XSS
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxs
+#     - name: Stored DOM XSS
+#       url: /writeups/portswigger/xxs
+#       type: PRACTITIONER
+#     - name: Reflected XSS into HTML context with most tags and attributes blocked
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS into HTML context with all tags blocked except custom ones
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS with some SVG markup allowed
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS in canonical link tag
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS into a JavaScript string with single quote and backslash escaped
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Stored XSS into onclick event with angle brackets and double quotes HTML-encoded and single quotes and backslash escaped
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Exploiting cross-site scripting to steal cookies
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Exploiting cross-site scripting to capture passwords
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Exploiting XSS to bypass CSRF defenses
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS with AngularJS sandbox escape without strings
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS with AngularJS sandbox escape and CSP
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS with event handlers and href attributes blocked
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS in a JavaScript URL with some characters blocked
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS protected by very strict CSP, with dangling markup attack
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain
+#     - name: Reflected XSS protected by CSP, with CSP bypass
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/insecure-deserialization/exploit-ruby-deserialization-using-doc-gadget-chain      
+#   - title: XXE
+#     url: /writeups/portswigger/xxe
+#     labs:
+#     - name: Blind XXE with out-of-band interaction
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxe
+#     - name: Blind XXE with out-of-band interaction via XML parameter entities
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxe
+#     - name: Exploiting blind XXE to exfiltrate data using a malicious external DTD
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxe
+#     - name: Exploiting blind XXE to retrieve data via error messages
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxe
+#     - name: Exploiting XInclude to retrieve files
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxe
+#     - name: Exploiting XXE via image file upload
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxe
+#     - name: Exploiting XXE to retrieve data by repurposing a local DTD
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/xxe
+#   - title: Server-Side Request Forgery (SSRF)
+#     url: /writeups/portswigger/ssrf
+#     labs:       
+#     - name: Blind SSRF with out-of-band detection
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/ssrf
+#     - name: SSRF with blacklist-based input filter
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/ssrf
+#     - name: SSRF with filter bypass via open redirection vulnerability
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/ssrf
+#     - name: Blind SSRF with Shellshock exploitation
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/ssrf
+#     - name: SSRF with whitelist-based input filter
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/ssrf
+#   - title: OS Command Injections
+#     url: /writeups/portswigger/command-injection
+#     labs:
+#     - name: Blind OS command injection with time delays
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/command-injection
+#     - name: Blind OS command injection with output redirection
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/command-injection
+#     - name: Blind OS command injection with out-of-band interaction
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/command-injection
+#     - name: Blind OS command injection with out-of-band data exfiltration
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/command-injection
+#   - title: Business logic vulnerabilities
+#     url: /writeups/portswigger/business-logic-vulns
+#     labs:       
+#     - name: Low-level logic flaw
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/business-logic-vulns/low-level-logic-flow
+#     - name: Inconsistent handling of exceptional input
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/business-logic-vulns/inconsistent-handling-of-exceptional-input
+#     - name: Weak isolationon dual-use endpoint
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/business-logic-vulns/weak-isolation-dual-use-endpoint
+#     - name: Insufficient workflow validation
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/business-logic-vulns/insufficient-workflow-validation
+#     - name: Authentication bypass via flawed state machine 
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/business-logic-vulns/authentication-bypass-via-flawed-state-machine
+#     - name: Infinite money logic flaw
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/business-logic-vulns/infinite-money-logic-flaw
+#     - name: Authentication bypass via encryption oracle
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/business-logic-vulns/authentication-bypass-via-encryption-oracle
+#     - name: Bypassing access controls using email address parsing discrepancies
+#       type: EXPERT
+#       url: /writeups/portswigger/business-logic-vulns/Bypassing-access-controls-using-email-address-parsing-discrepancies
+#   - title: File upload vulnerabilities
+#     url: /writeups/portswigger/file-upload-vulns/
+#     labs:       
+#     - name: Web shell upload via path traversal
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/file-upload-vulns/
+#     - name: Web shell upload via extension blacklist bypass
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/file-upload-vulns/
+#     - name: Web shell upload via obfuscated file extension
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/file-upload-vulns/
+#     - name: Remote code execution via polyglot web shell upload
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/file-upload-vulns/
+#     - name: Web shell upload via race condition
+#       type: EXPERT
+#       url: /writeups/portswigger/file-upload-vulns/
+#   - title: JWT
+#     url: /writeups/portswigger/jwt/
+#     labs:       
+#     - name: JWT authentication bypass via weak signing key
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/jwt/
+#     - name: JWT authentication bypass via jwk header injection
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/jwt/
+#     - name: JWT authentication bypass via jku header injection
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/jwt/
+#     - name: JWT authentication bypass via kid header path traversal
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/jwt/
+#     - name: JWT authentication bypass via algorithm confusion
+#       type: EXPERT
+#       url: /writeups/portswigger/jwt/
+#     - name: JWT authentication bypass via algorithm confusion with no exposed key
+#       type: EXPERT
+#       url: /writeups/portswigger/jwt/
+#   - title: API testing
+#     url: /writeups/portswigger/api-testing/
+#     labs:       
+#     - name: Exploiting server-side parameter pollution in a query string
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/api-testing/
+#     - name: Finding and exploiting an unused API endpoint
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/api-testing/
+#     - name: Exploiting a mass assignment vulnerability
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/api-testing/
+#     - name: Exploiting server-side parameter pollution in a REST URL
+#       type: EXPERT
+#       url: /writeups/portswigger/api-testing/
+#   - title: Web cache deception
+#     url: /writeups/portswigger/web-cache-deception
+#     labs:       
+#     - name: Exploiting path delimiters for web cache deception
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/web-cache-deception/
+#     - name: Exploiting origin server normalization for web cache deception
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/web-cache-deception/
+#     - name: Exploiting web cache server normalization for a web cache deception
+#       type: PRACTITIONER
+#       url: /writeups/portswigger/web-cache-deception/

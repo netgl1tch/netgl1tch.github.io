@@ -1,0 +1,37 @@
+# #====================
+# - note: 1 # Web
+#   title: Web
+#   url: /notes/web/
+#   topics:
+#     - title: SQLi
+#       url: /notes/web/sqli
+#     - title: XSS
+#       url: /notes/web/xss
+#     #...
+# #===================== 
+# - note: 2 # Windows
+#   title: Windows
+#   url: /notes/windows/
+#   topics:
+#     - title: Basics
+#       url: /notes/windows/basics
+#     - title: DPAPI
+#       url: /notes/windows/dpapi
+#       #...
+# #===================
+# - note: 3 # Linux
+#   title: Linux
+#   url: /notes/linux/
+#   topics:
+#     - title: basics
+#       url: /notes/linux/basics
+#       #...
+# #===================
+# - note: 4
+#   title: Active Directory
+#   url: /notes/ad/
+#   topics:
+#     - title: basics
+#       url: /notes/ad/basics
+#       #...
+# #===================
