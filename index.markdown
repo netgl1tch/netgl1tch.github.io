@@ -9,4 +9,4 @@ layout: default
 
 <p>The goal of this site is to track my progress and contribute useful insights to others who are on a similar path.</p>
 
-<img src='/assets/img/img1.png' width='500'>
+<!-- <img src='/assets/img/img1.png' width='500'> -->
