@@ -1,5 +1,6 @@
 ---
 layout: post
+type: writeup
 title: "CCTV [HTB]"
 tab_title: "CCTV Wr1teup"
 permalink: /writeups/htb/cctv

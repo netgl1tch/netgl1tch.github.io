@@ -1,5 +1,6 @@
 ---
 layout: post
+type: writeup
 title: "Principal [HTB]"
 tab_title: "Principal Wr1teup"
 permalink: /writeups/htb/principal

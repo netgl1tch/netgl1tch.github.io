@@ -1,5 +1,6 @@
 ---
 layout: post
+type: writeup
 title: "MonitorsFour [HTB]"
 tab_title: "MonitorsFour Wr1teup"
 permalink: /writeups/htb/monitorsfour

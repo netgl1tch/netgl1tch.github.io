@@ -1,5 +1,6 @@
 ---
 layout: post
+type: writeup
 title: "WingData [HTB]"
 tab_title: "WingData Wr1teup"
 permalink: /writeups/htb/wingdata

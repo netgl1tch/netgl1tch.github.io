@@ -1,5 +1,6 @@
 ---
 layout: post
+type: writeup
 title: "Guardian [HTB]"
 tab_title: "Guardian Wr1teup"
 permalink: /writeups/htb/guardian

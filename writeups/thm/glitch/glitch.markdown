@@ -1,6 +1,7 @@
 ---
 permalink: /writeups/thm/glitch
 layout: post
+type: writeup
 icon: /writeups/thm/glitch/images/lab-icon.png
 difficulty: easy
 os: Linux

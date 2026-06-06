@@ -1,6 +1,8 @@
 ---
 layout: post
+type: writeup
 title: "Expressway [HTB]"
+type: writeup
 tab_title: "Expressway Wr1teup"
 permalink: /writeups/htb/expressway
 icon:  /writeups/htb/expressway/images/image.png

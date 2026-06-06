@@ -3,14 +3,15 @@ layout: default
 ---
 <div class="container">
 <article class="post">
-
+  {% if page.type == "writeup" %}
   <header class="post-header">
+    
     <div class="post-header_content">
 
       <h1>{{ page.title }}</h1>
 
       <div class="post-meta">
-        <span>{{ page.date | date: "%d %B %Y" }}</span>
+        <h5>{{ page.date | date: "%d %B %Y" }}</h5>
 
         {% if page.link %}
           <h4><a href="{{ page.link }}">Link</a></h4>
@@ -34,6 +35,7 @@ layout: default
     </div>    
 {% endif%}
   </header>
+  
   <div class="post-review">
     {% if page.review %}
     <h3>Review</h3>
@@ -41,6 +43,18 @@ layout: default
     {% endif %}
   </div>
   <hr>
+  {% endif %}
+
+  {% if page.type == "note" %}
+    {% if page.back_link %}
+      <a href="{{page.back_link}}">{{page.back_link_title}}</a>
+      <hr>
+    {% endif %}
+    <h1>{{page.title}}</h1>
+    <h5>{{ page.date | date: "%d %B %Y" }}</h5>
+  {% endif %}
+
+
   <div class="post-content">
     {{ content }}
   </div>

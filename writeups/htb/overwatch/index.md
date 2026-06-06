@@ -1,5 +1,6 @@
 ---
 layout: post
+type: writeup
 title: "Overwatch [HTB]"
 tab_title: "Overwatch Wr1teup"
 permalink: /writeups/htb/overwatch

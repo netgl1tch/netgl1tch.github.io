@@ -1,6 +1,7 @@
 ---
 permalink: /writeups/thm/flatline
 layout: post
+type: writeup
 icon: /writeups/thm/flatline/images/lab-icon.png
 difficulty: easy
 os: Windows

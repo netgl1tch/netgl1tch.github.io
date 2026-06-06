@@ -1,5 +1,5 @@
 # #====================
-# - note: 1 # Web
+# - id: 1 # Web
 #   title: Web
 #   url: /notes/web/
 #   topics:
@@ -9,7 +9,7 @@
 #       url: /notes/web/xss
 #     #...
 # #===================== 
-# - note: 2 # Windows
+# - id: 2 # Windows
 #   title: Windows
 #   url: /notes/windows/
 #   topics:
@@ -19,19 +19,39 @@
 #       url: /notes/windows/dpapi
 #       #...
 # #===================
-# - note: 3 # Linux
+# - id: 3 # Linux
 #   title: Linux
 #   url: /notes/linux/
 #   topics:
 #     - title: basics
 #       url: /notes/linux/basics
 #       #...
-# #===================
-# - note: 4
+#===================
+# - id: 4
 #   title: Active Directory
 #   url: /notes/ad/
 #   topics:
-#     - title: basics
-#       url: /notes/ad/basics
+#     # - title: Basics
+#     #   url: /notes/ad#basics
+#     - title: Attacks
+#       url: /notes/ad#attacks
+#       themes:
+#         - name: Kerberoasting
+#           url: /notes/ad/attacks_kerberoasting
+#         - name: ASREProasting
+#           url: /notes/ad/attacks_asreproasting
+#         - name: Password Spraying
+#           url: /notes/ad/password-spraying
+#       #...
+# # #===================
+# - id: 5
+#   title: Other Notes
+#   url: /notes/others/
+#   topics:
+#     - title: Network Protocols
+#       url: /notes/others#net-protocols
+#       themes:
+#         - name: DNS
+#           url: /notes/others/dns
 #       #...
 # #===================

@@ -1,6 +1,7 @@
 ---
 permalink: /writeups/thm/vulnnet-roasted
 layout: post
+type: writeup
 icon: /writeups/thm/vulnnet-roasted/images/lab-icon.png
 difficulty: easy
 os: Windows
