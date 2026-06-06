@@ -329,7 +329,7 @@ trivia@facts:~$ sudo /usr/bin/facter -v
 4.10.0
 ```
 
-The official documentation contains an interesting `fact` -> [^page^](https://help.puppet.com/core//current/Content/PuppetCore/loading_custom_facts.htm).
+The official documentation contains an interesting `fact` -> [page](https://help.puppet.com/core//current/Content/PuppetCore/loading_custom_facts.htm).
 
 ![alt text](images/facter-docs.png)
 
