@@ -14,6 +14,7 @@ back_links:
       url: /writeups/htb
     - name: '~/writeups'
       url: /writeups
+date: 30.03.2026
 ---
 
 ## Nmap Sc4n

@@ -15,6 +15,7 @@ back_links:
       url: /writeups/htb
     - name: '~/writeups'
       url: /writeups
+date: 07.03.2026
 ---
 
 

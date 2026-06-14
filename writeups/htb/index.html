@@ -10,7 +10,22 @@ back_link_title: b4ck t0 wr1t3up$
 {% for item in site.data.writeups.items %}
     {%  if item.title == "HackTheBox" %}
     {% for writeup in item.writeups %}
-        <div style="margin-left: 30px;"><a href='{{ writeup.url }}'><span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}}</a></div>
+        <div style="margin-left: 30px;">
+            
+                {%if writeup.status == "active" %}
+                <a href='{{ writeup.url }}' style="opacity: 0.5;">
+                <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}}
+                
+                    <span  style=" color: rgb(255, 242, 0);">[{{writeup.status}}]</span>
+                </a>
+                {% else %}
+                <a href='{{ writeup.url }}'>
+                    <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}} 
+                </a>
+                    
+                {% endif %}
+            
+        </div>
     {% endfor %}
     {% endif %}
 {% endfor %}

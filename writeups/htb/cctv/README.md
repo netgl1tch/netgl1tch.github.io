@@ -14,8 +14,5 @@ back_links:
       url: /writeups/htb
     - name: '~/writeups'
       url: /writeups
+status: active
 ---
-
-# ~# It is Active now
-
-Writeup will reveal after retiring

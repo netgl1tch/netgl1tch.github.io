@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://netgl1tch.github.io/sitemap.xml

@@ -37,11 +37,11 @@
 #       url: /notes/ad#attacks
 #       themes:
 #         - name: Kerberoasting
-#           url: /notes/ad/attacks_kerberoasting
-#         - name: ASREProasting
-#           url: /notes/ad/attacks_asreproasting
-#         - name: Password Spraying
-#           url: /notes/ad/password-spraying
+#           url: /notes/ad/kerberoasting
+#         # - name: ASREProasting
+#         #   url: /notes/ad/asreproasting
+#         # - name: Password Spraying
+#         #   url: /notes/ad/password-spraying
 #       #...
 # # #===================
 # - id: 5
@@ -53,5 +53,7 @@
 #       themes:
 #         - name: DNS
 #           url: /notes/others/dns
-#       #...
-# #===================
+#         - name: LDAP
+#           url: /notes/others/ldap
+      #...
+#===================

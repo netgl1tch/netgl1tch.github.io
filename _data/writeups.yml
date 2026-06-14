@@ -2,22 +2,39 @@ items:
   - title: HackTheBox
     url: /writeups/htb
     writeups: 
-      - name: Expressway
-        url: /writeups/htb/expressway
-      - name: Guardian
-        url: /writeups/htb/guardian
+      - name: VariaType
+        url: /writeups/htb/variatype
+        status: retired
       - name: Facts
         url: /writeups/htb/facts
-      - name: CCTV
-        url: /writeups/htb/cctv
-      - name: WingData
-        url: /writeups/htb/wingdata
+        status: retired
       - name: MonitorsFour
         url: /writeups/htb/monitorsfour
-      - name: Principal
-        url: /writeups/htb/principal
+        status: retired
       - name: Overwatch
         url: /writeups/htb/overwatch
+        status: retired
+      - name: Principal
+        url: /writeups/htb/principal
+        status: retired
+      - name: Expressway
+        url: /writeups/htb/expressway
+        status: retired
+      - name: Guardian
+        url: /writeups/htb/guardian
+        status: retired
+      - name: NanoCorp
+        url: /writeups/htb/nanocorp
+        status: active
+      - name: WingData
+        url: /writeups/htb/wingdata
+        status: active
+      - name: DevArea
+        url: /writeups/htb/devarea
+        status: active
+      - name: CCTV
+        url: /writeups/htb/cctv
+        status: active
   - title: TryHackMe
     url: /writeups/thm
     writeups:

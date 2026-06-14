@@ -14,6 +14,7 @@ back_links:
       url: /writeups/htb
     - name: '~/writeups'
       url: /writeups
+date: 28.02.2026
 ---
 
 ## Nmap Scan

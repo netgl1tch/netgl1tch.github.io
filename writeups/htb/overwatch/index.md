@@ -14,6 +14,7 @@ back_links:
       url: /writeups/htb
     - name: '~/writeups'
       url: /writeups
+date: 09.05.2026
 ---
 
 ## ~$ nM@p sc4n
