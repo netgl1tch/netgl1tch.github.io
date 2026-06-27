@@ -2,6 +2,8 @@ items:
   - title: HackTheBox
     url: /writeups/htb
     writeups: 
+      - name: WingData
+        url: /writeups/htb/wingdata
       - name:  NanoCorp
         url: /writeups/htb/nanocorp
       - name: VariaType
@@ -25,9 +27,6 @@ items:
       - name: Guardian
         url: /writeups/htb/guardian
         status: retired
-      - name: WingData
-        url: /writeups/htb/wingdata
-        status: active
       - name: DevArea
         url: /writeups/htb/devarea
         status: active
