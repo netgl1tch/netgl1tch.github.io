@@ -623,7 +623,9 @@ Login as root:
 ## Appendix
 
 <h2 class="highlight_h2" id="script_cve-2022-46364">A) Script for CVE-2022-46364</h2>
+
 ```bash
+
 #!/bin/bash
 
 file=$1
