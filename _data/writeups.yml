@@ -2,6 +2,8 @@ items:
   - title: HackTheBox
     url: /writeups/htb
     writeups: 
+      - name: CCTV
+        url: /writeups/htb/cctv
       - name: DevArea
         url: /writeups/htb/devarea
       - name: WingData
@@ -29,9 +31,6 @@ items:
       - name: Guardian
         url: /writeups/htb/guardian
         status: retired
-      - name: CCTV
-        url: /writeups/htb/cctv
-        status: active
   - title: TryHackMe
     url: /writeups/thm
     writeups:
