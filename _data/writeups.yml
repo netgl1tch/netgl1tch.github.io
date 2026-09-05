@@ -1,35 +1,65 @@
 items:
   - title: HackTheBox
     url: /writeups/htb
-    writeups: 
+    writeups:
+      - name: Pirate
+        url: /writeups/htb/pirate
+        os: Windows
+        level: hard
+      # - name: Logging
+      #   url: /writeups/htb/logging
+      #   os: Windows
+      #   level: medium
       - name: CCTV
         url: /writeups/htb/cctv
+        os: Linux
+        level: easy
       - name: DevArea
         url: /writeups/htb/devarea
+        os: Linux
+        level: medium
       - name: WingData
         url: /writeups/htb/wingdata
+        os: Linux
+        level: easy
       - name:  NanoCorp
         url: /writeups/htb/nanocorp
+        os: Windows
+        level: hard
       - name: VariaType
         url: /writeups/htb/variatype
+        os: Linux
+        level: medium
         status: retired
       - name: Facts
         url: /writeups/htb/facts
+        os: Linux
+        level: easy
         status: retired
       - name: MonitorsFour
         url: /writeups/htb/monitorsfour
+        os: Windows
+        level: easy
         status: retired
       - name: Overwatch
         url: /writeups/htb/overwatch
+        os: Windows
+        level: medium
         status: retired
       - name: Principal
         url: /writeups/htb/principal
+        os: Linux
+        level: medium
         status: retired
       - name: Expressway
         url: /writeups/htb/expressway
+        os: Linux
+        level: easy
         status: retired
       - name: Guardian
         url: /writeups/htb/guardian
+        os: Linux
+        level: hard
         status: retired
   - title: TryHackMe
     url: /writeups/thm

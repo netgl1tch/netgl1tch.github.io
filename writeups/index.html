@@ -8,21 +8,45 @@ tab_title: wr1teups
 
 {% for item in site.data.writeups.items %}
 
-<h2><a href='{{ item.url }}'> {{ item.title }}</a></h2>
+<h2 style="margin-bottom: 20px;"><a href='{{ item.url }}'> {{ item.title }}</a></h2>
 
     {% for writeup in item.writeups %}
-        <div style="margin-left: 30px;">{%if writeup.status == "active" %}
-                <a href='{{ writeup.url }}' style="opacity: 0.5;">
-                <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}}
-                
-                    <span  style=" color: rgb(255, 242, 0);">[{{writeup.status}}]</span>
-                </a>
-                {% else %}
-                <a href='{{ writeup.url }}'>
-                    <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}} 
-                </a>
+                <div  class="writeups-links">
+
+                    <div class="writeup-row">
+
+                        {%if writeup.status == "active" %}
+
+                        <a href='{{ writeup.url }}' style="opacity: 0.5;"  class="writeup-link">
+                        <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}}
+                        
+                            <span  style=" color: rgb(255, 242, 0);">[{{writeup.status}}]</span>
+                        </a>
+
+                    {% else %}
+
+
+                        <a href='{{ writeup.url }}'  class="writeup-link">
+                            <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}} 
+                        </a> 
+                        
+                        <div class="writeups-tags">
+                            {% if writeup.os %}
+                                <p class="writeup-tag os {{writeup.os}}"> {{writeup.os}} </p>
+                            {% endif %}
+                            {% if writeup.level %}
+                                <p class="writeup-tag level {{writeup.level}}"> {{writeup.level}} </p>
+                            {%endif%}
+                        </div>
+                        
+                        
+                        
+                    {% endif %}
+                       
+                    </div>
+
                     
-                {% endif %}</div>
+        </div>
     {% endfor %}
     <hr class="delimiter-hr" style="color: rgba(95, 250, 255, 0.249); -webkit-animation: wiggle 0.4s;">
 {% endfor %}

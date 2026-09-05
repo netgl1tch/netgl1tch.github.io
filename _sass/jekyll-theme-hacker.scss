@@ -44,6 +44,24 @@ $mint-light: #9dffd6;
 $text-main: #e6fff2;
 $text-dim: #8fb3a3;
 
+//=========
+
+$color-bg:         #f6f8fa00;
+$color-text:        #24292e;
+$color-comment:     #6a737d;
+$color-keyword:     #00ff91a9;
+$color-string:      #00d9ffb5;
+$color-name:        #9d6efcbf;
+$color-class:       #e449ffc0;
+$color-tag:         #00ff3ca1;
+$color-diff-remove-fg: #d60311bd;
+$color-diff-remove-bg: #ffeef0d6;
+$color-diff-add-fg:    #00ff3cbc;
+$color-diff-add-bg:    #add4b8;
+$color-error-fg:    #ff0314a5;
+$color-error-bg:    #ffeef009;
+
+
 /* ======================================================
    MIXINS
 ====================================================== */
@@ -214,13 +232,13 @@ hr {
 }
 
 /* ======================================================
-   CONTENT 
+   CONTENT
 ====================================================== */
 
 .post-content,
 #main_content {
   font-size: $fs-base;
-  padding-top: 30px;
+  padding-top: 15px;
   .links_back
   {
     width: 100dwv;
@@ -238,11 +256,21 @@ hr {
 
   p {
     margin: 0.8rem 0;
+
+    &.p_review {
+      color: #24f759de;
+      font-size: 1.1rem;
+      background-color: #bd15ff24;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ae00ff90;
+      box-shadow: 0 0 5px 1px #ae00ff90;
+    }
   }
 
   a {
     color: $neon-glow;
-      transition: all 0.2s linear;
+    transition: all 0.2s linear;
     text-decoration: none;
     &:hover {
       color: $neon-core;
@@ -346,7 +374,7 @@ hr {
   }
 }
 
-.links_back 
+.links_back
 {
   position: fixed;
   width: 100%;
@@ -414,11 +442,21 @@ hr {
     h1 { font-size: clamp(26px, 6vw, 32px); }
     h2 { font-size: clamp(22px, 5vw, 26px); }
   }
+
+  .writeup-row {
+    padding: 12px 14px;
+  }
+
+  .writeup-link {
+    width: 100%;
+  }
 }
 
-//=============
+/* ======================================================
+   TAKEAWAYS / HIGHLIGHTS
+====================================================== */
 
-.takeaways_block 
+.takeaways_block
 {
   display: flex;
   flex-direction: column;
@@ -427,7 +465,7 @@ hr {
   margin-left: 30px;
 }
 
-.takeaways_p 
+.takeaways_p
 {
   background-color: #b13be330;
   color: $mint-light;
@@ -435,12 +473,12 @@ hr {
   display: inline-block;
   font-weight: bold;
 }
-.highlight 
+.highlight
 {
   font-weight: bold;
   color: #16d539;
 }
-.highlight_link 
+.highlight_link
 {
   background-color: #a95eea56;
   color: $neon-glow;
@@ -461,16 +499,14 @@ hr {
   font-weight: bold;
   color: #ff0073 !important;
   text-shadow: 2px 3px 3px #00a2ff78 !important;
-
 }
 .highlight_h2
 {
   font-weight: bold;
   color: #15ff00 !important;
   text-shadow: 2px 3px 1px #a200ff !important;
-
 }
-.highlight_filename
+.highlight_filename, .highlight_server
 {
   color: #7e52ff;
   background-color: #000000b1;
@@ -484,6 +520,13 @@ hr {
   padding: 5px;
   font-weight: bold;
 }
+.highlight_computer
+{
+  color: #52ff89;
+  background-color: #000000b1;
+  padding: 5px;
+  font-weight: bold;
+}
 .highlight_tools
 {
   color: #ff52f1;
@@ -491,7 +534,7 @@ hr {
   padding: 5px;
   font-weight: bold;
 }
-.highlight_info 
+.highlight_info
 {
   color: #ff52df;
   font-size: 1.1em;
@@ -500,20 +543,43 @@ hr {
   background-color: #0000004c;
   padding: 10px;
   text-align: center;
-
   font-weight: bold;
 }
-.highlight_cve
+.highlight_key
+{
+  color: #f82dff;
+  font-size: 1.1em;
+  margin: 0 0 15px 30px;
+  display: inline-block;
+  background-color: #0000004c;
+  font-weight: bold;
+}
+.highlight_cve, .highlight_vuln
 {
   color: #bf1e1e;
   background-color: #000000b1;
   padding: 5px;
   font-weight: bold;
 }
-
+.highlight_attr
+{
+  color: #0b0b0b;
+  background-color: #a0e500aa;
+  padding: 2px;
+  font-style: italic;
+  font-weight: bold;
+}
+.highlight_flag
+{
+  color: #0b0b0b;
+  background-color: #0089e5aa;
+  padding: 2px;
+  font-style: italic;
+  font-weight: bold;
+}
 .highlight_term
 {
-  color: #5283ff;
+  color: #ff0000a8;
   font-size: 1.05em;
   display: block;
   margin: 0 auto;
@@ -521,11 +587,13 @@ hr {
   padding: 10px;
   box-shadow: 0 0 5px 1px #0000003d;
   text-align: center;
-
   font-weight: bold;
 }
 
-//=========================
+/* ======================================================
+   ATTACK PATH / NODES
+====================================================== */
+
 .path {
     display: flex;
     flex-direction: column;
@@ -535,19 +603,12 @@ hr {
 
 .node {
     position: relative;
-
     min-width: 250px;
-
     text-align: center;
-
     padding: 12px 24px;
-
     border-radius: 10px;
-
     border: 1px solid rgba(34, 255, 0, 0.54);
-
     background: rgba(4, 255, 0, 0.047);
-
     color: #bb00ff;
     font-weight: bold;
 }
@@ -557,27 +618,302 @@ hr {
 
 .node:not(:last-child)::after {
     content: "";
-
     position: absolute;
-
     left: 50%;
-    top: 100%;
-
+    top: 101%;
     width: 2px;
-    height: 45px;
-
-    background: #00ff88;
+    height: 60px;
+    background: #00ff1a92;
 }
 
-.node:not(:last-child)::before {
-    content: "▼";
+// .node:not(:last-child)::before {
+//     content: "▼";
+//     position: absolute;
+//     left: 50%;
+//     top: calc(100% + 34px);
+//     transform: translateX(-50%);
+//     color: #8c52ff;
+// }
 
-    position: absolute;
+/* ======================================================
+   WRITEUP CARDS (список работ на главной/списке)
+====================================================== */
 
-    left: 50%;
-    top: calc(100% + 34px);
+.writeups-links
+{
+  display: flex;
+  align-items: center;
+}
 
-    transform: translateX(-50%);
+.writeup-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 2px solid transparent;
+  transition: all .25s ease;
 
-    color: #8c52ff;
+}
+
+/* ---------- ссылка ---------- */
+
+.writeup-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: $text-main;
+  text-decoration: none;
+  font-size: $fs-lg;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  position: relative;
+
+  transition: color .2s ease, text-shadow .2s ease;
+
+  span {
+    display: inline-block;
+    transition: transform .25s ease, text-shadow .25s ease;
+    text-shadow: 0 0 6px rgba(228, 20, 255, 0.6);
+  }
+
+  &:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(22, 213, 57, 0.45);
+
+    span {
+      transform: translateX(4px);
+      text-shadow: 0 0 12px rgba(228, 20, 255, 0.9), 0 0 20px rgba(228, 20, 255, 0.4);
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px dashed $cyber-core;
+    outline-offset: 4px;
+  }
+}
+
+/* ---------- теги ---------- */
+
+.writeups-tags {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.writeup-tag {
+  display: inline-block;
+  margin: 0 !important;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  line-height: 1.4;
+  white-space: nowrap;
+  transition: filter .2s ease, box-shadow .2s ease, transform .2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &.os {
+    &.Linux {
+      color: $neon-core;
+      background: rgba(228, 20, 255, 0.08);
+      border: 1px solid rgba(228, 20, 255, 0.45);
+      &:hover {
+        box-shadow: 0 0 10px rgba(228, 20, 255, 0.5);
+        background: rgba(228, 20, 255, 0.15);
+      }
+    }
+    &.Windows {
+      color: #00b7ff;
+      background: rgba(20, 192, 255, 0.08);
+      border: 1px solid rgba(20, 212, 255, 0.45);
+      &:hover {
+        box-shadow: 0 0 10px rgba(20, 204, 255, 0.5);
+        background: rgba(20, 196, 255, 0.15);
+      }
+    }
+  }
+
+  &.level {
+    &.easy {
+      color: $cyber-core;
+      background: rgba(43, 218, 75, 0.08);
+      border: 1px solid rgba(57, 218, 87, 0.45);
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(43, 204, 72, 0.5);
+        background: rgba(45, 213, 76, 0.15);
+      }
+    }
+    &.medium {
+      color: rgba(229, 168, 14, 0.992);
+      background: rgba(213, 159, 22, 0.08);
+      border: 1px solid rgba(213, 159, 22, 0.45);
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(213, 152, 22, 0.5);
+        background: rgba(213, 143, 22, 0.15);
+      }
+    }
+    &.hard {
+      color: rgba(229, 14, 14, 0.992);
+      background: rgba(213, 22, 22, 0.08);
+      border: 1px solid rgba(213, 22, 22, 0.45);
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(213, 22, 22, 0.5);
+        background: rgba(213, 22, 22, 0.15);
+      }
+    }
+    &.insane {
+      color: rgba(228, 228, 228, 0.992);
+      background: rgba(219, 219, 219, 0.08);
+      border: 1px solid rgba(219, 221, 219, 0.45);
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(216, 217, 216, 0.5);
+        background: rgba(212, 212, 212, 0.15);
+      }
+    }
+  }
+}
+
+.scheme 
+{
+  img {
+    box-shadow: none;
+    border: none;
+    user-select: none;
+  }
+}
+
+.text
+{
+  font-weight: 900;
+  &-red
+  {
+    color: red;
+  }
+  &-green
+  {
+    color: $cyber-core;
+  }
+  &-pink
+  {
+    color: $neon-core;
+  }
+  &-yellow
+  {
+    color: #ceff52;
+  }
+}
+
+.highlight {
+  background: $color-bg;
+  border-radius: 6px;
+  margin: 12px 0;
+
+  pre {
+    background: $color-bg;
+    color: $color-text;
+    padding: 16px;
+    overflow-x: auto;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 0;
+  }
+
+  code {
+    background: transparent;
+    padding: 0;
+    color: $color-text;
+  }
+
+  // --- Токены Rouge (соответствие GitHub Primer) ---
+
+  // комментарии
+  .c, .c1, .cm, .cp, .cs {
+    color: $color-comment;
+    font-style: italic;
+  }
+
+  // ключевые слова
+  .k, .kc, .kd, .kn, .kp, .kr, .kt {
+    color: $color-keyword;
+  }
+
+  // операторы
+  .o, .ow {
+    color: $color-keyword;
+  }
+
+  // строки
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .ss, .sr {
+    color: $color-string;
+  }
+
+  // имена / builtin
+  .n, .na, .nb, .bp, .nl, .nv, .vc, .vg, .vi, .no {
+    color: $color-name;
+  }
+
+  // классы
+  .nc {
+    color: $color-class;
+    font-weight: 600;
+  }
+
+  // функции
+  .nf, .fm {
+    color: $color-class;
+  }
+
+  // namespace
+  .nn {
+    color: $color-text;
+  }
+
+  // теги / флаги команд
+  .nt {
+    color: $color-tag;
+  }
+
+  // числа
+  .m, .mf, .mh, .mi, .mo, .il {
+    color: $color-name;
+  }
+
+  // diff
+  .gd { color: $color-diff-remove-fg; background-color: $color-diff-remove-bg; }
+  .gi { color: $color-diff-add-fg; background-color: $color-diff-add-bg; }
+  .gh { color: $color-name; font-weight: 600; }
+  .gu { color: $color-class; font-weight: 600; }
+
+  // ошибки
+  .err {
+    color: $color-error-fg;
+    background-color: $color-error-bg;
+  }
+
+  // пробелы
+  .w {
+    color: transparent;
+  }
+
+  // пунктуация
+  .p {
+    color: $color-text;
+  }
+
+  .ge { font-style: italic; }
+  .gs { font-weight: 600; }
 }

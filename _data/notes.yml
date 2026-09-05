@@ -13,47 +13,48 @@
 #   title: Windows
 #   url: /notes/windows/
 #   topics:
-#     - title: Basics
-#       url: /notes/windows/basics
-#     - title: DPAPI
-#       url: /notes/windows/dpapi
-#       #...
+#     - title: Windows Architecture
+#       url: /notes/windows/arch
+    # - title: Access Tokens
+    #   url: /notes/windows/access-tokens
+    # - title: Security Descriptors
+    #   url: /notes/windows/sd
+    # - title: Windows Authentication
+    #   url: /notes/windows/authentication
+    # - title: Interactive Authentication
+    #   url: /notes/windows/interactive-authentication
+    # - title: Network Authentication
+    #   url: /notes/windows/net-authentication
+    # - title: Kerberos
+    #   url: /notes/windows/kerberos
+      #...
 # #===================
-# - id: 3 # Linux
+# - id: 3 
 #   title: Linux
 #   url: /notes/linux/
 #   topics:
-#     - title: basics
-#       url: /notes/linux/basics
+#     - title: Linux Architecture
+#       url: /notes/linux/arch
 #       #...
 #===================
 # - id: 4
 #   title: Active Directory
 #   url: /notes/ad/
 #   topics:
-#     # - title: Basics
-#     #   url: /notes/ad#basics
-#     - title: Attacks
-#       url: /notes/ad#attacks
+#     - title: NTLM Relay
+#       url: /notes/ad/ntlm-relay
+#     - title: Kerberos Delegations
+#       url: /notes/ad/kerberos-delegations
+#     - title: AD CS
+#       url: /notes/ad/adcs
 #       themes:
-#         - name: Kerberoasting
-#           url: /notes/ad/kerberoasting
-#         # - name: ASREProasting
-#         #   url: /notes/ad/asreproasting
-#         # - name: Password Spraying
-#         #   url: /notes/ad/password-spraying
-#       #...
-# # #===================
-# - id: 5
-#   title: Other Notes
-#   url: /notes/others/
+#         - name: ESC1
+#           url: /notes/ad/adcs/esc1
+#         - name: ESC17
+#           url: /notes/ad/adcs/esc17
+# - id: 6
+#   title: Cheet Sheets
+#   url: /notes/cheet-sheets/
 #   topics:
-#     - title: Network Protocols
-#       url: /notes/others#net-protocols
-#       themes:
-#         - name: DNS
-#           url: /notes/others/dns
-#         - name: LDAP
-#           url: /notes/others/ldap
       #...
 #===================

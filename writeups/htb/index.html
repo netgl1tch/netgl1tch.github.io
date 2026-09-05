@@ -10,21 +10,41 @@ back_link_title: b4ck t0 wr1t3up$
 {% for item in site.data.writeups.items %}
     {%  if item.title == "HackTheBox" %}
     {% for writeup in item.writeups %}
-        <div style="margin-left: 30px;">
-            
-                {%if writeup.status == "active" %}
-                <a href='{{ writeup.url }}' style="opacity: 0.5;">
-                <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}}
-                
-                    <span  style=" color: rgb(255, 242, 0);">[{{writeup.status}}]</span>
-                </a>
-                {% else %}
-                <a href='{{ writeup.url }}'>
-                    <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}} 
-                </a>
+                <div  class="writeups-links">
+
+                    <div class="writeup-row">
+
+                        {%if writeup.status == "active" %}
+
+                        <a href='{{ writeup.url }}' style="opacity: 0.5;"  class="writeup-link">
+                        <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}}
+                        
+                            <span  style=" color: rgb(255, 242, 0);">[{{writeup.status}}]</span>
+                        </a>
+
+                    {% else %}
+
+
+                        <a href='{{ writeup.url }}'  class="writeup-link">
+                            <span style=" color: rgb(181, 90, 255);">-></span> {{writeup.name}} 
+                        </a> 
+                        
+                        <div class="writeups-tags">
+                            {% if writeup.os %}
+                                <p class="writeup-tag os {{writeup.os}}"> {{writeup.os}} </p>
+                            {% endif %}
+                            {% if writeup.level %}
+                                <p class="writeup-tag level {{writeup.level}}"> {{writeup.level}} </p>
+                            {%endif%}
+                        </div>
+                        
+                        
+                        
+                    {% endif %}
+                       
+                    </div>
+
                     
-                {% endif %}
-            
         </div>
     {% endfor %}
     {% endif %}
